@@ -23,8 +23,6 @@ import org.eclipse.core.resources.IProject;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.jdt.core.IJavaProject;
 import org.eclipse.jdt.core.JavaCore;
-import org.eclipse.jface.preference.IPreferencePage;
-import org.eclipse.jface.preference.PreferencePage;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Composite;
@@ -109,5 +107,4 @@ public class TomcatProjectPropertyPage extends PropertyPage implements IWorkbenc
 	protected TomcatProject getTomcatProject() throws CoreException {
 		return TomcatProject.create(getJavaProject());
 	}
-
 }

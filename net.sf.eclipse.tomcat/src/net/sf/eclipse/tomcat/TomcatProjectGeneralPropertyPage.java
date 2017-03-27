@@ -219,7 +219,7 @@ public class TomcatProjectGeneralPropertyPage implements TomcatPluginResources {
         try {
             TomcatProject prj = page.getTomcatProject();
             if(prj != null) {
-                result = prj.getRootDir();
+                result = rootDirText.getText();
             }
         } catch (CoreException ex) {
             // result = "";
